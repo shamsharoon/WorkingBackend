@@ -573,13 +573,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow:hidden;
 }
 
 .logo{
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 30%;
+  transform: translateY(10px);
+  scale: 1.5;
+  padding-top: 40px;
 }
 
 #captureContainer{
@@ -593,7 +595,7 @@ body {
 
 nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   margin-bottom: 10%;
@@ -667,6 +669,10 @@ li{
   margin-top: 30px;
 }
 
+.right{
+  transform: translateY(-75px);
+}
+
 p{
   text-align: center;
 }
@@ -724,11 +730,13 @@ video{
 
 @media screen and (max-width: 768px){
   .logo{
+    transform: translateY(90px);
     width: 50%;
+    scale: 2;
   }
 
   body{
-    width: 20vw;
+    width: 100vw;
   }
 
   section{
@@ -739,9 +747,12 @@ video{
     width: 80%;
   }
 
-  .hero-captureContainer, .hero-section{
+  .hero-section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   a{
@@ -791,16 +802,22 @@ video{
     justify-content: center;
     align-items: center;
     margin-top: 40%;
+    transform: translateY(10px);
   }
 
   .camera-captureContainer{
     margin-top: 20px;
   }
 
+  #captureContainer{
+    transform: translateY(100px);
+    scale: 1.1;
+  }
+
   .camera-captureContainer canvas{
     border-radius: 48px ;
     height: 530px;
-    width: 630px;
+    width: 570px;
   }
 }
 
