@@ -739,9 +739,11 @@ video{
     width: 80%;
   }
 
-  .hero-captureContainer, .hero-section{
+  .hero-section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   a{
@@ -795,6 +797,11 @@ video{
 
   .camera-captureContainer{
     margin-top: 20px;
+  }
+
+  #captureContainer{
+    transform: translateY(100px);
+    scale: 1.1;
   }
 
   .camera-captureContainer canvas{
