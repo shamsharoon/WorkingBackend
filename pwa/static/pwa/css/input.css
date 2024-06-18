@@ -65,9 +65,9 @@ li{
 
 .hero-captureContainer, .hero-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0 10%;
+    gap: 20px;
 }
 
 .left{
@@ -177,14 +177,27 @@ video{
         width: 50%;
     }
 
+    body{
+        width: 100vw;
+    }
+    
+    section{
+        width: 80%;
+    }
+
     captureContainer{
         width: 80%;
     }
 
-    .hero-captureContainer{
+    .hero-captureContainer, .hero-section{
+        display: flex;
         flex-direction: column;
-        margin: 0;
-        display: block;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -241,7 +254,7 @@ video{
     .camera-captureContainer canvas{
         border-radius: 48px ;
         height: 530px;
-        width: 630px;
+        width: 570px;
     }
     
 }
